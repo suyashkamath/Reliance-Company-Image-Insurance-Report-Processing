@@ -41,7 +41,7 @@ app = FastAPI(title="Insurance Policy Processing System")
 # Add CORS middleware for frontend compatibility
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://tata-reports.vercel.app"],  # Adjust to specific origins in production, e.g., ["https://your-frontend.com"]
+    allow_origins=["https://reliance-image-report.vercel.app"],  # Adjust to specific origins in production, e.g., ["https://your-frontend.com"]
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
