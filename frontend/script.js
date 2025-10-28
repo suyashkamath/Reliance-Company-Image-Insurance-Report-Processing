@@ -67,16 +67,16 @@ document.getElementById('process-button').addEventListener('click', async () => 
             result.calculated_data.forEach(record => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td class="border border-gray-300 p-2">${record.Segment || 'N/A'}</td>
-                    <td class="border border-gray-300 p-2">${record.Location || 'N/A'}</td>
-                    <td class="border border-gray-300 p-2">${record['Policy Type'] || 'N/A'}</td>
-                    <td class="border border-gray-300 p-2">${record.Payin || 'N/A'}</td>
-                    <td class="border border-gray-300 p-2">${record['Doable District'] || 'N/A'}</td>
-                    <td class="border border-gray-300 p-2">${record.Remarks || ''}</td>
-                    <td class="border border-gray-300 p-2">${record['Calculated Payout'] || 'N/A'}</td>
-                    <td class="border border-gray-300 p-2">${record['Formula Used'] || 'N/A'}</td>
-                    <td class="border border-gray-300 p-2">${record['Rule Explanation'] || 'N/A'}</td>
-                `;
+    <td class="border border-gray-300 p-2">${record.segment || 'N/A'}</td>
+    <td class="border border-gray-300 p-2">${record.location || 'N/A'}</td>
+    <td class="border border-gray-300 p-2">${record['policy type'] || 'N/A'}</td>
+    <td class="border border-gray-300 p-2">${record.payin || 'N/A'}</td>
+    <td class="border border-gray-300 p-2">${record.location || 'N/A'}</td>
+    <td class="border border-gray-300 p-2">${record.remark || ''}</td>
+    <td class="border border-gray-300 p-2">${record['Calculated Payout'] || 'N/A'}</td>
+    <td class="border border-gray-300 p-2">${record['Formula Used'] || 'N/A'}</td>
+    <td class="border border-gray-300 p-2">${record['Rule Explanation'] || 'N/A'}</td>
+`;
                 resultsTableBody.appendChild(row);
             });
 
